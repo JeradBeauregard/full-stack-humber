@@ -1,0 +1,126 @@
+body{
+    padding: 0; 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /*set font type for page */
+    display: flex; 
+    flex-direction: column; /* set content formatting*/
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itemContainer{ /* container to hold product information cards*/
+    width: 90vw;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{ /* represents a product information card */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 450px;
+    width: 300px;
+   /*  border-radius: 10px; */
+    border: 1px solid rgba(118, 118, 118, 0.501);
+    box-shadow: 0px 1px 3px rgba(89, 90, 98, 0.542);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.itemImage{  /* product image */
+    height: 300px;
+    width: 300px;
+    
+
+}
+
+.price{ /* styling for product price*/
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+    align-self: flex-start;
+    margin-left: 12px;
+}
+
+.priceT{ /* styling for product name*/
+    color: grey;
+    align-self: flex-start;
+    margin-left: 12px;
+    font-size: 14px;
+}
+
+.cart /*product add to cart button styling */
+{
+    border: none;
+    height: 50px;
+    width: 280px;
+    border-radius: 5px;
+    background-color: rgb(215, 43, 135);
+    color: white;
+}
+
+.searchButton{ /* search button styling*/
+    border: none;
+    height: 30px;
+    width: 180px;
+    border-radius: 5px;
+    background-color: rgb(215, 43, 135);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-content{ /* gradient header */
+    margin-top: 0;
+    height: 45px;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(149, 149, 255), purple, pink);
+}
+
+#hero{ /* holds logo text */
+    height: 100px;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+#productSearch{ /* holds search bar*/
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#heroBorder{ /*header lower gradient border */
+    height: 40px;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(149, 149, 255), purple, pink);
+}
+
+h1{
+    margin: 0;
+    margin-top: 10px;
+    color: rgb(65, 65, 65);
+    text-shadow: 1px 1px 2px rgba(82, 82, 82, 0.5);
+}
+
+#footer{ /* footer styling*/
+    margin-top: 50px;
+    height: 40x;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(149, 149, 255), purple, pink);
+    color: white;
+    padding-left: 100px;
+}

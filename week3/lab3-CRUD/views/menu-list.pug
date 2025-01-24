@@ -1,0 +1,17 @@
+extends layout
+block layout-content
+    div.content
+        h1.page-title Administer menu links
+        table
+            thead
+                tr
+                    th Link
+                    th Operations
+            tbody
+                each link in menu
+                    tr
+                        td #{link.name} 
+                        td
+                            form(action="/admin/menu/edit")
+                                input(type="hidden", name="linkId", value=link._id)
+                                button(type="submit") Edit
